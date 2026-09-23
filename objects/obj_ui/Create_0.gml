@@ -1,0 +1,1 @@
+tutorial_time = 60 * 10

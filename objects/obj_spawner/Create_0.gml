@@ -1,0 +1,10 @@
+timer = 0
+spawn_timer = 120
+spawn_delay = 40
+delay_timer = 0
+next_spawn_x = 0
+next_spawn_y = 0
+spawning = false
+draw_warning = false
+dasher_spawn_chance = 0.01
+sniper_spawn_chance = 0.01
