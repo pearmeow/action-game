@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_main.ogg",
-  "volume":0.29,
+  "volume":0.0,
 }

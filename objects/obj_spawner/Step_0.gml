@@ -7,20 +7,14 @@ if (spawning) {
 		delay_timer = 0
 		var rng = random(1);
 		// if smaller than both then roll again to determine who spawns
-		if (rng < dasher_spawn_chance || rng < sniper_spawn_chance) {
-			if (rng < dasher_spawn_chance && rng < sniper_spawn_chance) {
-				rng = random(dasher_spawn_chance + sniper_spawn_chance);
-				if (rng <= dasher_spawn_chance) {
-					instance_create_depth(next_spawn_x, next_spawn_y, 0, obj_dasher)
-				} else {
-					instance_create_depth(next_spawn_x, next_spawn_y, 0, obj_sniper)
-				}
-			}
-			
+		if (rng <= dasher_spawn_chance) {
+			instance_create_depth(next_spawn_x, next_spawn_y, 0, obj_dasher)
+		} else if (rng <= dasher_spawn_chance + sniper_spawn_chance) {
+			instance_create_depth(next_spawn_x, next_spawn_y, 0, obj_sniper)
 		} else {
 			instance_create_depth(next_spawn_x, next_spawn_y, 0, obj_walker)
-			dasher_spawn_chance = clamp(dasher_spawn_chance * 1.2, 0, 0.67)
-			sniper_spawn_chance = clamp(sniper_spawn_chance * 1.2, 0, 0.35)
+			dasher_spawn_chance = clamp(dasher_spawn_chance * 1.2, 0, 0.3)
+			sniper_spawn_chance = clamp(sniper_spawn_chance * 1.2, 0, 0.1)
 		}
 		spawning = false
 		draw_warning = false

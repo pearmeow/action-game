@@ -6,6 +6,7 @@ cooldown = true
 shoot_cooldown = 30
 shoot_cooldown_timer = 0
 bullet_speed = 20
+bullet_offset = 20
 
 function shoot(bullet_x, bullet_y, bullet_vars) {
 	instance_create_depth(bullet_x, bullet_y, 0, obj_bullet, bullet_vars)

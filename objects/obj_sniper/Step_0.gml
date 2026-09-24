@@ -17,23 +17,13 @@ if (cooldown) {
 		x_dist = obj_player.x - x
 		y_dist = obj_player.y - y
 
+		// math to determine bullet trajectory + spawn distance from the sniper
 		angle_to_player = arctan(abs(y_dist) / abs(x_dist))
-		var bullet_x_vel = bullet_speed * cos(angle_to_player)
-		var x_offset = x
-		var y_offset = y
-		if (x_dist < 0) {
-			bullet_x_vel *= -1
-			x_offset -=  20 * cos(angle_to_player)
-		}
-		var bullet_y_vel = bullet_speed * sin(angle_to_player)
-		if (y_dist < 0) {
-			bullet_y_vel *= -1
-			y_offset -= 20 * sin(angle_to_player)
-		}
+		var bullet_x_vel = bullet_speed * cos(angle_to_player) * sign(x_dist)
+		var bullet_y_vel = bullet_speed * sin(angle_to_player) * sign(y_dist)
+		var x_offset = x + sign(x_dist) * bullet_offset * cos(angle_to_player)
+		var y_offset = y + sign(y_dist) * bullet_offset * sin(angle_to_player)
 
-		// calculate the bullet x & y vel with player pos
-		// spawn the bullet with offset
-		// shoot em
 		shoot(x_offset, y_offset, {x_vel: bullet_x_vel, y_vel: bullet_y_vel});
 	}
 	shoot_time++
