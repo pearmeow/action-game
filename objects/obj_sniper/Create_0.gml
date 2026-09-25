@@ -7,10 +7,12 @@ cooldown = true
 shoot_cooldown = 30
 shoot_cooldown_timer = 0
 bullet_speed = 20
-bullet_offset = 40
+bullet_offset = 75
 sniper_scale = 2
 sniper_reversed = 1 // -1 if it needs to be reversed
 sniper_angle = 0
+line_start_x = x
+line_start_y = y
 
 function shoot(bullet_x, bullet_y, bullet_vars) {
 	instance_create_depth(bullet_x, bullet_y, 0, obj_bullet, bullet_vars)

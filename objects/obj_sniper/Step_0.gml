@@ -18,6 +18,12 @@ if (sniper_reversed == -1) {
 	sniper_angle += 180
 }
 
+var x_dist = obj_player.x - x
+var y_dist = obj_player.y - y
+var angle_to_player = arctan(abs(y_dist) / abs(x_dist))
+line_start_x = x + sign(x_dist) * (bullet_offset - 20) * cos(angle_to_player)
+line_start_y = y + sign(y_dist) * (bullet_offset - 20) * sin(angle_to_player)
+
 if (cooldown) {
 	if (shoot_cooldown_timer >= shoot_cooldown) {
 		shoot_cooldown_timer = 0
@@ -31,12 +37,9 @@ if (cooldown) {
 		shoot_time = 0
 		shooting = false
 		cooldown = true
-		x_dist = obj_player.x - x
-		y_dist = obj_player.y - y
 		shoot_color = c_orange
 
 		// math to determine bullet trajectory + spawn distance from the sniper
-		angle_to_player = arctan(abs(y_dist) / abs(x_dist))
 		var bullet_x_vel = bullet_speed * cos(angle_to_player) * sign(x_dist)
 		var bullet_y_vel = bullet_speed * sin(angle_to_player) * sign(y_dist)
 		var x_offset = x + sign(x_dist) * bullet_offset * cos(angle_to_player)

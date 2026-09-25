@@ -3,6 +3,6 @@ draw_sprite_ext(spr_gun, 0, x, y, sniper_scale * sniper_reversed, sniper_scale, 
 
 if (shooting) {
 	draw_set_colour(shoot_color)
-	draw_line_width(x, y, obj_player.x, obj_player.y, 3)
+	draw_line_width(line_start_x, line_start_y, obj_player.x, obj_player.y, 3)
 	draw_set_colour(c_white)
 }
