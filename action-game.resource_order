@@ -17,10 +17,10 @@
     {"name":"obj_walker","order":6,"path":"objects/obj_walker/obj_walker.yy",},
     {"name":"rm_start","order":1,"path":"rooms/rm_start/rm_start.yy",},
     {"name":"bgm_main","order":1,"path":"sounds/bgm_main/bgm_main.yy",},
-    {"name":"spr_bullet","order":5,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"spr_dasher","order":1,"path":"sprites/spr_dasher/spr_dasher.yy",},
     {"name":"spr_player_idle","order":2,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
     {"name":"spr_player_run","order":3,"path":"sprites/spr_player_run/spr_player_run.yy",},
     {"name":"spr_sniper","order":4,"path":"sprites/spr_sniper/spr_sniper.yy",},
+    {"name":"spr_walker","order":5,"path":"sprites/spr_walker/spr_walker.yy",},
   ],
 }

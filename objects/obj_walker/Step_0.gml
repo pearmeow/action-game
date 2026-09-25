@@ -15,5 +15,7 @@ if (y_dist < 0) {
 	y_vel *= -1
 }
 
+image_angle -= 3
+
 x += x_vel
 y += y_vel
