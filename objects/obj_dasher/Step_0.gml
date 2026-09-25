@@ -31,9 +31,10 @@ if (windup_timer >= windup_time) {
 	if (y_dist < 0) {
 		y_vel *= -1
 	}
-} else {
-	// spin
-	image_angle += 5
+} else { // track player
+	angle_to_player = find_angle(x, y, tracked_player_pos[0], tracked_player_pos[1])
+	// add own image angle to smooth out turning
+	image_angle = (image_angle + (angle_to_player - 90)) / 2
 }
 
 if (windup_timer < tracking_time) {
