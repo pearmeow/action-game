@@ -1,0 +1,8 @@
+draw_set_halign(fa_left)
+draw_text(10, 10, "Credits")
+draw_text(10, 30, gun)
+draw_text(10, 50, gunshot)
+draw_text(10, 70, bgm)
+draw_text(10, 90, footstep)
+draw_text(10, 110, "Other sprites & animations: Me")
+draw_text(10, 130, "Programming: Me")

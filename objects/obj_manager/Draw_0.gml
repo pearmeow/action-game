@@ -1,7 +1,7 @@
 if (room == rm_start) {
 	draw_set_halign(fa_center)
 	draw_set_font(big_font)
-	draw_text_transformed(room_width / 2, 40, "Game name TBD", 1,1, 0)
+	draw_text_transformed(room_width / 2, 40, "Guy vs Robots With Bad AI", 1,1, 0)
 	draw_set_font(default_font)
 	draw_text(room_width / 2, room_height - 80, "Press space to start")
 }
