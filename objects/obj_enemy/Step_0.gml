@@ -21,5 +21,10 @@ if (dead) {
 	if (death_sprite != spr_empty) {
 		instance_create_depth(x, y, 0, obj_death, {sprite_index: death_sprite, image_angle})
 	}
+	if (death_sound != sfx_empty) {
+		if (!audio_is_playing(death_sound)) {
+			audio_play_sound(death_sound, 0, false)	
+		}
+	}
 	instance_destroy()
 }

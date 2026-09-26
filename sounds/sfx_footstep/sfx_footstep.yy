@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"bgm_main",
+  "%Name":"sfx_footstep",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":14.117641,
+  "duration":0.26331067,
   "exportDir":"",
-  "name":"bgm_main",
+  "name":"sfx_footstep",
   "parent":{
     "name":"sounds",
     "path":"folders/sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"bgm_main.ogg",
-  "volume":0.07,
+  "soundFile":"sfx_footstep.wav",
+  "volume":1.0,
 }

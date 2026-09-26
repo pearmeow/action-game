@@ -3,6 +3,7 @@ if (global.player_alive == false) {
 }
 
 if (dead && global.player_alive == true) {
+	audio_play_sound(sfx_squelch, 0, false, 1, 0, random_range(1, 1.3))
 	global.player_alive = false
 	sprite_index = spr_player_death
 	return
@@ -27,7 +28,14 @@ var horizontal_movement = keyboard_check(ord("D")) - keyboard_check(ord("A"))
 x += horizontal_movement * player_speed * sprint_multiplier
 
 if (vertical_movement != 0 || horizontal_movement != 0) {
-	sprite_index = spr_player_run
+	if (sprite_index != spr_player_run) {
+		sprite_index = spr_player_run
+	}
+	if (floor(image_index) == 1 || floor(image_index) == 3) {
+		if (!audio_is_playing(sfx_footstep)) {
+			audio_play_sound(sfx_footstep, 0, false, 1, 0, random_range(1, 1.5))
+		}
+	}
 	if (horizontal_movement == -1) {
 		image_xscale = -1;
 	} else if (horizontal_movement == 1) {

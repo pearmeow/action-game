@@ -5,3 +5,4 @@ image_xscale = 1
 image_yscale = 1
 hp = 1
 death_sprite = spr_empty
+death_sound = sfx_empty
