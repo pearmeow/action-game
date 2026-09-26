@@ -30,7 +30,7 @@
     {"name":"spr_empty","order":10,"path":"sprites/spr_empty/spr_empty.yy",},
     {"name":"spr_end_background","order":9,"path":"sprites/spr_end_background/spr_end_background.yy",},
     {"name":"spr_gun","order":6,"path":"sprites/spr_gun/spr_gun.yy",},
-    {"name":"spr_player_death","order":17,"path":"sprites/spr_player_death/spr_player_death.yy",},
+    {"name":"spr_player_death","order":13,"path":"sprites/spr_player_death/spr_player_death.yy",},
     {"name":"spr_player_idle","order":2,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
     {"name":"spr_player_run","order":3,"path":"sprites/spr_player_run/spr_player_run.yy",},
     {"name":"spr_sniper_death","order":12,"path":"sprites/spr_sniper_death/spr_sniper_death.yy",},
