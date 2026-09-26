@@ -1,5 +1,6 @@
 if (dead) {
 	global.player_alive = false
+	room_goto(rm_end)
 	return
 }
 

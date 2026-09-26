@@ -23,11 +23,13 @@ if (after_goto_main) {
 
 if (keyboard_check_pressed(vk_space)) {
 	if (room == rm_start) {
+		draw_set_font(default_font)
 		room_goto(rm_main)
 		after_goto_main = true
 	}
 	if (room == rm_end) {
-		show_debug_message("end")
+		global.player_alive = true
+		global.time_survived = 0
 		room_goto(rm_start)
 	}
 }

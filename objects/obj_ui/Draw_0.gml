@@ -14,9 +14,3 @@ with (obj_player) {
 	draw_rectangle(10, 10, 10 + max_stamina, 20, true)
 	draw_rectangle(10, 10, 10 + stamina, 20, false)
 }
-
-if (obj_player.dead) {
-	draw_set_halign(fa_center)
-	draw_text(room_width / 2, room_height / 2, "You are dead")
-	draw_text(room_width / 2, room_height / 2 + 20, "R to restart")
-}
