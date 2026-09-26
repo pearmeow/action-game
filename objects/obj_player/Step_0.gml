@@ -14,7 +14,7 @@ if (keyboard_check(vk_shift) and stamina > 0) {
 } else {
 	sprint_multiplier = 1
 	if (stamina < max_stamina) {
-		stamina += 0.2
+		stamina += 0.5
 	} else {
 		stamina = max_stamina
 	}
