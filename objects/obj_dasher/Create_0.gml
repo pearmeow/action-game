@@ -8,3 +8,4 @@ dash_timer = 0
 tracking_time = 10
 dashing = false
 hp = 2
+death_sprite = spr_dasher_death

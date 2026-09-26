@@ -1,6 +1,10 @@
-if (dead) {
+if (global.player_alive == false) {
+	return
+}
+
+if (dead && global.player_alive == true) {
 	global.player_alive = false
-	room_goto(rm_end)
+	sprite_index = spr_player_death
 	return
 }
 

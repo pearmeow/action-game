@@ -15,6 +15,7 @@ sniper_sprite_index = 0
 sniper_animating = false
 line_start_x = x
 line_start_y = y
+death_sprite = spr_sniper_death
 
 function shoot(bullet_x, bullet_y, bullet_vars) {
 	instance_create_depth(bullet_x, bullet_y, 0, obj_bullet, bullet_vars)

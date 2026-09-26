@@ -17,5 +17,9 @@ if (hp <= 0) {
 }
 
 if (dead) {
+	// spawn an object that destroys itself on animation end
+	if (death_sprite != spr_empty) {
+		instance_create_depth(x, y, 0, obj_death, {sprite_index: death_sprite, image_angle})
+	}
 	instance_destroy()
 }

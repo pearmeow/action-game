@@ -1,19 +1,3 @@
-if (keyboard_check(ord("R")) and room == rm_main) {
-	global.player_alive = true
-	global.time_survived = 0
-	obj_player.reset()
-	with (obj_enemy) {
-		instance_destroy()
-	}
-	with (obj_spawner) {
-		instance_destroy()
-	}
-	with (obj_ui) {
-		reset()
-	}
-	initialize_enemies()
-}
-
 if (after_goto_main) {
 	after_goto_main = false
 	instance_create_depth(672, 384, 0, obj_player)
@@ -34,6 +18,6 @@ if (keyboard_check_pressed(vk_space)) {
 	}
 }
 
-if (global.player_alive) {
+if (global.player_alive && room == rm_main) {
 	global.time_survived += 1 / 60
 }

@@ -1,3 +1,1 @@
-if (!dead) {
-	draw_self()
-}
+draw_self()
