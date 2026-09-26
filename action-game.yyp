@@ -45,6 +45,7 @@
     {"id":{"name":"utility","path":"scripts/utility/utility.yy",},},
     {"id":{"name":"bgm_main","path":"sounds/bgm_main/bgm_main.yy",},},
     {"id":{"name":"sfx_gunshot","path":"sounds/sfx_gunshot/sfx_gunshot.yy",},},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_dasher","path":"sprites/spr_dasher/spr_dasher.yy",},},
     {"id":{"name":"spr_gun","path":"sprites/spr_gun/spr_gun.yy",},},

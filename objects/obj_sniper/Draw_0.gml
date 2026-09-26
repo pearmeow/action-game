@@ -1,5 +1,5 @@
 draw_self()
-draw_sprite_ext(spr_gun, 0, x, y, sniper_scale * sniper_reversed, sniper_scale, sniper_angle, c_white, 1)
+draw_sprite_ext(spr_gun, sniper_sprite_index, x, y, sniper_scale * sniper_reversed, sniper_scale, sniper_angle, c_white, 1)
 
 if (shooting) {
 	draw_set_colour(shoot_color)

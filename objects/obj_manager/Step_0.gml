@@ -16,7 +16,7 @@ if (keyboard_check(ord("R")) and room == rm_main) {
 
 if (after_goto_main) {
 	after_goto_main = false
-	instance_create_depth(room_width / 2, room_height / 2, 0, obj_player)
+	instance_create_depth(672, 384, 0, obj_player)
 	instance_create_depth(room_width / 2, room_height / 2, 0, obj_ui)
 	initialize_enemies()
 }

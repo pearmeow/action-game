@@ -7,4 +7,4 @@ next_spawn_y = 0
 spawning = false
 draw_warning = false
 dasher_spawn_chance = 0.01
-sniper_spawn_chance = 1
+sniper_spawn_chance = 0.01

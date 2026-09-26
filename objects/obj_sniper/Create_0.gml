@@ -11,6 +11,8 @@ bullet_offset = 75
 sniper_scale = 2
 sniper_reversed = 1 // -1 if it needs to be reversed
 sniper_angle = 0
+sniper_sprite_index = 0
+sniper_animating = false
 line_start_x = x
 line_start_y = y
 

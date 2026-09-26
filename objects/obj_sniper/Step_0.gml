@@ -4,7 +4,6 @@ if (!global.player_alive) {
 }
 
 // correctly angle sniper
-
 if (obj_player.x < x) {
 	image_xscale = -1
 	sniper_reversed = -1
@@ -16,6 +15,14 @@ if (obj_player.x < x) {
 sniper_angle = find_angle(x, y, obj_player.x, obj_player.y)
 if (sniper_reversed == -1) {
 	sniper_angle += 180
+}
+
+if (sniper_animating) {
+	if (sniper_sprite_index == 5) {
+		sniper_animating = false
+		sniper_sprite_index = -1
+	}
+	sniper_sprite_index++
 }
 
 var x_dist = obj_player.x - x
@@ -34,6 +41,7 @@ if (cooldown) {
 	shoot_cooldown_timer++;
 } else {
 	if (shoot_time >= shoot_timer) {
+		sniper_animating = true
 		shoot_time = 0
 		shooting = false
 		cooldown = true
